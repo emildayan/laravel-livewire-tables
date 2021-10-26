@@ -10,7 +10,7 @@
             <x-livewire-tables::bs5.table.heading />
         @endif
 
-        @if ($bulkActionsEnabled && count($this->bulkActions))
+        @if ($bulkActionsEnabled && count($this->bulkActions) && $this->showBulkActionsInHeader)
             <x-livewire-tables::bs5.table.heading>
                 <input
                     wire:model="selectPage"
@@ -111,7 +111,7 @@
                     </x-livewire-tables::bs5.table.cell>
                 @endif
 
-                @if ($bulkActionsEnabled && count($this->bulkActions))
+                @if ($bulkActionsEnabled && count($this->bulkActions) && $this->showBulkActionsCheckbox)
                     <x-livewire-tables::bs5.table.cell class="align-middle">
                         <input
                             wire:model="selected"

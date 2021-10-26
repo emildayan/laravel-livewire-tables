@@ -16,6 +16,9 @@ trait WithBulkActions
     public bool $selectAll = false;
     public array $selected = [];
     public bool $hideBulkActionsOnEmpty = false;
+    public bool $showBulkActionsCheckbox = true;
+    public $showBulkActionsInHeader = true;
+    public $hideBulkActionsDropdown = false;
 
     public function renderingWithBulkActions(): void
     {
