@@ -19,6 +19,7 @@ trait WithBulkActions
     public bool $showBulkActionsCheckbox = true;
     public $showBulkActionsInHeader = true;
     public $hideBulkActionsDropdown = false;
+    public $showSelectedRowsCount = true;
 
     public function renderingWithBulkActions(): void
     {

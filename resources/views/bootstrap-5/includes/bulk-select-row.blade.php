@@ -1,5 +1,6 @@
 @if (
     $bulkActionsEnabled &&
+    $showSelectedRowsCount &&
     count($this->bulkActions) &&
     (
         (
