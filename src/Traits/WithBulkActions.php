@@ -43,6 +43,7 @@ trait WithBulkActions
     {
         if ($value) {
             $this->selectPageRows();
+            $this->emit('updatedSelected');
 
             return;
         }
