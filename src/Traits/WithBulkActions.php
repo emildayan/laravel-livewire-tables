@@ -36,6 +36,7 @@ trait WithBulkActions
     {
         $this->selectAll = false;
         $this->selectPage = false;
+        $this->emit('updatedSelected');
     }
 
     public function updatedSelectPage($value): void
@@ -48,6 +49,7 @@ trait WithBulkActions
 
         $this->selectAll = false;
         $this->selected = [];
+        $this->emit('updatedSelected');
     }
 
     public function selectPageRows(): void
