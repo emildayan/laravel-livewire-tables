@@ -13,7 +13,9 @@
                 <span>@lang('of')</span>
                 <strong>{{ $rows->total() }}</strong>
                 <span>@lang('results')</span>
+                {!! $afterPaginationButton !!}
             </div>
+
         </div>
     @else
         <div class="row">

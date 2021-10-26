@@ -13,6 +13,7 @@ trait WithPerPagePagination
     public int $perPage = 10;
     public array $perPageAccepted = [10, 25, 50];
     public bool $perPageAll = false;
+    public string $afterPaginationButton = '';
 
     public function mountWithPerPagePagination(): void
     {
