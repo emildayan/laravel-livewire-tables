@@ -14,7 +14,7 @@
             <x-livewire-tables::bs5.table.heading>
                 <input
                     wire:model="selectPage"
-                    class="form-check-input"
+                    class="form-check-input {{ $this->bulkActionHeaderClass }}"
                     type="checkbox"
                 />
             </x-livewire-tables::bs5.table.heading>

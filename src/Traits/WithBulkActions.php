@@ -20,6 +20,7 @@ trait WithBulkActions
     public $showBulkActionsInHeader = true;
     public $hideBulkActionsDropdown = false;
     public $showSelectedRowsCount = true;
+    public $bulkActionHeaderClass = "";
 
     public function renderingWithBulkActions(): void
     {
