@@ -11,10 +11,10 @@
         @endif
 
         @if ($bulkActionsEnabled && count($this->bulkActions) && $this->showBulkActionsInHeader)
-            <x-livewire-tables::bs5.table.heading>
+            <x-livewire-tables::bs5.table.heading class="{{ $this->bulkActionHeaderClass }}">
                 <input
                     wire:model="selectPage"
-                    class="form-check-input {{ $this->bulkActionHeaderClass }}"
+                    class="form-check-input"
                     type="checkbox"
                 />
             </x-livewire-tables::bs5.table.heading>
