@@ -93,7 +93,7 @@
 
         @forelse ($rows as $index => $row)
             <x-livewire-tables::bs5.table.row
-                wire:loading.class.delay="text-muted"
+                wire:loading.class.delay="text-muted opacity-50"
                 wire:key="table-row-{{ $row->{$primaryKey} }}"
                 wire:sortable.item="{{ $row->{$primaryKey} }}"
                 :reordering="$reordering"
