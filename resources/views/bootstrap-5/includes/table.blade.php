@@ -127,6 +127,10 @@
 
                 @include($rowView, ['row' => $row])
             </x-livewire-tables::bs5.table.row>
+
+            @if($row instanceof \App\Models\Invoice && (request()->routeIs('orders') || str_contains(request()->path(), 'order.order-table')))
+                <x-order-item :invoice="$row" />
+            @endif
         @empty
             <x-livewire-tables::bs5.table.row>
                 <x-livewire-tables::bs5.table.cell :colspan="$colspan">
